@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Sasidhar - First-year B.Tech student at NIAT College, Python Developer, C Programmer, Web Developer, and UI/UX Designer.">
+  <meta name="theme-color" content="#08090D">
+  <title>SASIDHAR | NIAT College Developer & UI/UX Designer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient 3D Neon Background Orbs (Cobalt, Violet, Lime) & Grid -->
+  <div class="ambient-glow glow-cobalt" aria-hidden="true"></div>
+  <div class="ambient-glow glow-violet" aria-hidden="true"></div>
+  <div class="ambient-glow glow-lime" aria-hidden="true"></div>
+  <div class="cyber-grid" aria-hidden="true"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Sasidhar Homepage">
+        <span class="logo-text">SASIDHAR</span><span class="logo-dot">.</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Mobile Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-outline nav-cta">Let's Talk</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main id="main-content">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="status-badge fade-in">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span class="status-text">NIAT COLLEGE &bull; 1ST YEAR B.TECH</span>
+          </div>
+
+          <p class="hero-greeting fade-in">HELLO, I'M SASIDHAR</p>
+          <h1 class="hero-title fade-in">
+            BUILDING IDEAS INTO <span class="gradient-text-3d">DIGITAL REALITY</span>
+          </h1>
+
+          <p class="hero-subtitle fade-in">
+            <span class="subtitle-tag">Python Developer</span>
+            <span class="subtitle-sep">|</span>
+            <span class="subtitle-tag">C Programmer</span>
+            <span class="subtitle-sep">|</span>
+            <span class="subtitle-tag">Web Developer</span>
+            <span class="subtitle-sep">|</span>
+            <span class="subtitle-tag">UI/UX Designer</span>
+          </p>
+
+          <p class="hero-description fade-in">
+            I turn creative ideas into functional, beautiful, and meaningful digital experiences through programming and design.
+          </p>
+
+          <div class="hero-buttons fade-in">
+            <a href="#projects" class="btn btn-primary 3d-btn" data-depth="20">
+              <span>EXPLORE MY WORK</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary 3d-btn" data-depth="15">
+              <span>CONTACT ME</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero 3D Profile Frame -->
+        <div class="hero-visual fade-in">
+          <div class="profile-3d-scene">
+            <div class="profile-card-wrapper" data-tilt data-tilt-max="14" data-tilt-perspective="1000">
+              <div class="profile-glow" aria-hidden="true"></div>
+              
+              <div class="profile-frame">
+                <!-- Real Uploaded Photograph Preserved 100% Unaltered -->
+                <img 
+                  src="profile.jpg" 
+                  alt="Sasidhar - NIAT College Developer & Designer" 
+                  class="profile-img" 
+                  loading="eager"
+                >
+                <div class="profile-overlay-accent" aria-hidden="true"></div>
+              </div>
+
+              <!-- 3D Layered Badges -->
+              <div class="floating-badge badge-top-right 3d-layer" data-z="35">
+                <span class="badge-dot"></span>
+                <span class="badge-label">NIAT College</span>
+              </div>
+              <div class="floating-badge badge-bottom-left 3d-layer" data-z="40">
+                <span class="badge-icon">⚡</span>
+                <span class="badge-label">Python & C Core</span>
+              </div>
+              <div class="floating-badge badge-bottom-right 3d-layer" data-z="30">
+                <span class="badge-dot violet"></span>
+                <span class="badge-label">UI/UX & Web</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">SCROLL TO EXPLORE</span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 01. PROFILE</span>
+          <h2 class="section-title">ABOUT ME</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography Narrative -->
+          <div class="about-narrative">
+            <div class="about-quote-box">
+              <p class="about-lead">
+                "Hello! I'm Sasidhar, a first-year B.Tech student passionate about programming, web development, technology, and creative digital experiences. I enjoy building websites, writing efficient code, exploring Python and C programming, and designing beautiful user interfaces. My goal is to transform creative ideas into meaningful digital experiences."
+              </p>
+            </div>
+
+            <p class="about-text">
+              I am Sasidhar, a first-year B.Tech student with a strong interest in programming, web technologies, and UI/UX design. I enjoy exploring programming languages, developing websites, solving coding problems, and creating clean digital interfaces. I believe in continuous learning, creativity, and building technology that makes a difference.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item" data-tilt data-tilt-max="6">
+                <span class="highlight-number">01</span>
+                <div class="highlight-info">
+                  <h4 class="highlight-title">Algorithmic Problem Solving</h4>
+                  <p class="highlight-desc">Developing strong logical fundamentals through systematic C and Python coding at NIAT College.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item" data-tilt data-tilt-max="6">
+                <span class="highlight-number violet-accent">02</span>
+                <div class="highlight-info">
+                  <h4 class="highlight-title">Modern Web Engineering</h4>
+                  <p class="highlight-desc">Crafting responsive, clean, and accessible web experiences using pure web standards.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item" data-tilt data-tilt-max="6">
+                <span class="highlight-number lime-accent">03</span>
+                <div class="highlight-info">
+                  <h4 class="highlight-title">Futuristic UI/UX Design</h4>
+                  <p class="highlight-desc">Designing minimalist, human-centered interfaces with 3D depth, fluid motion, and dark cyber aesthetics.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 3D Tech Telemetry / Profile Matrix -->
+          <div class="about-card-container">
+            <div class="telemetry-card" data-tilt data-tilt-max="10" data-tilt-perspective="1200">
+              <div class="telemetry-header">
+                <div class="telemetry-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="telemetry-title">developer_profile.json</span>
+              </div>
+
+              <div class="telemetry-body">
+                <div class="code-line"><span class="code-key">"name"</span>: <span class="code-val">"SASIDHAR"</span>,</div>
+                <div class="code-line"><span class="code-key">"institution"</span>: <span class="code-accent-violet">"NIAT College"</span>,</div>
+                <div class="code-line"><span class="code-key">"academic_status"</span>: <span class="code-val">"B.Tech – First Year"</span>,</div>
+                <div class="code-line"><span class="code-key">"domain"</span>: <span class="code-val">"Engineering & Technology"</span>,</div>
+                <div class="code-line"><span class="code-key">"primary_languages"</span>: [</div>
+                <div class="code-line indent"><span class="code-val">"Python"</span>, <span class="code-val">"C"</span>, <span class="code-val">"JavaScript"</span></div>
+                <div class="code-line">],</div>
+                <div class="code-line"><span class="code-key">"web_technologies"</span>: [</div>
+                <div class="code-line indent"><span class="code-val">"HTML5"</span>, <span class="code-val">"CSS3 (3D)"</span>, <span class="code-val">"Vanilla JS"</span></div>
+                <div class="code-line">],</div>
+                <div class="code-line"><span class="code-key">"design_discipline"</span>: <span class="code-accent-violet">"UI / UX Design"</span>,</div>
+                <div class="code-line"><span class="code-key">"mindset"</span>: <span class="code-accent-lime">"Continuous Learning & Precision"</span></div>
+              </div>
+
+              <div class="telemetry-footer">
+                <div class="telemetry-stat">
+                  <span class="stat-label">EXPLORATION</span>
+                  <span class="stat-value">Active</span>
+                </div>
+                <div class="telemetry-stat">
+                  <span class="stat-label">COLLEGE</span>
+                  <span class="stat-value college-highlight">NIAT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 02. COMPETENCIES</span>
+          <h2 class="section-title">MY TECH STACK</h2>
+          <p class="section-subtitle">
+            Core programming languages, web standards, and design disciplines I actively practice and explore.
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Skill 1: Python (Highlighted) -->
+          <div class="skill-card featured-skill" data-tilt data-tilt-max="12">
+            <div class="skill-badge-top cobalt-badge">CORE FOCUS</div>
+            <div class="skill-icon-wrap python-color 3d-icon">
+              <!-- Python SVG Icon -->
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                <path d="M11.9 1C6.9 1 7.2 3.2 7.2 3.2v2.2h4.9v.7H5.2S2 5.8 2 10.9s2.8 5 2.8 5h1.7v-2.4s-.1-2.8 2.8-2.8h4.8s2.7.1 2.7-2.6V3.8S17.4 1 11.9 1zm-1.4 1.5c.5 0 .8.4.8.8 0 .5-.4.8-.8.8s-.8-.4-.8-.8c0-.5.4-.8.8-.8zM12.1 23c5 0 4.7-2.2 4.7-2.2v-2.2h-4.9v-.7h6.9s3.2.3 3.2-4.8-2.8-5-2.8-5h-1.7v2.4s.1 2.8-2.8 2.8H9.9s-2.7-.1-2.7 2.6v4.3s-.6 2.8 4.9 2.8zm1.4-1.5c-.5 0-.8-.4-.8-.8 0-.5.4-.8.8-.8s.8.4.8.8c0 .5-.4.8-.8.8z"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Python Programming</h3>
+            <p class="skill-desc">
+              Writing clean, efficient scripts, developing algorithmic solutions, and building versatile programming applications.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Logic</span>
+              <span class="tag">Scripting</span>
+            </div>
+          </div>
+
+          <!-- Skill 2: C Programming (Highlighted) -->
+          <div class="skill-card featured-skill" data-tilt data-tilt-max="12">
+            <div class="skill-badge-top lime-badge">FOUNDATIONAL</div>
+            <div class="skill-icon-wrap c-color 3d-icon">
+              <!-- C Language SVG Icon -->
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c3.08 0 5.84-1.4 7.69-3.6l-2.48-1.86C15.86 17.91 14.04 19 12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7c2.04 0 3.86 1.09 5.21 2.46L19.69 5.6C17.84 3.4 15.08 2 12 2z"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">C Programming</h3>
+            <p class="skill-desc">
+              Mastering fundamental low-level computation, structured program design, memory concepts, and core algorithms.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Memory Concepts</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">Core Logic</span>
+            </div>
+          </div>
+
+          <!-- Skill 3: HTML5 -->
+          <div class="skill-card" data-tilt data-tilt-max="12">
+            <div class="skill-icon-wrap 3d-icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                <path d="M12 2L3 5v14l9 3 9-3V5l-9-3zm6 6.5h-9l.2 2.2h8.6l-.6 6.8L12 18.7l-5.2-1.2-.3-3.5h2.1l.1 1.6 3.3.8 3.3-.8.3-3.6H6.5L5.8 6.5h12.5l-.3 2z"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">HTML5</h3>
+            <p class="skill-desc">
+              Building accessible, SEO-optimized, clean, and semantic web structures based on modern W3C specifications.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Semantic HTML</span>
+              <span class="tag">Accessibility</span>
+              <span class="tag">Structure</span>
+            </div>
+          </div>
+
+          <!-- Skill 4: CSS3 -->
+          <div class="skill-card" data-tilt data-tilt-max="12">
+            <div class="skill-icon-wrap 3d-icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                <path d="M12 2L3 5v14l9 3 9-3V5l-9-3zm5.7 6.5l-.2 2.2h-7.6l.2 2.3h7.1l-.7 7.2L12 19.3l-4.5-1-.2-2.3h2.1l.1 1 2.5.6 2.5-.6.3-3.2H6.9l-.6-6.8h11.4z"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">CSS3</h3>
+            <p class="skill-desc">
+              Designing responsive grid/flexbox layouts, 3D CSS transforms, smooth keyframe animations, and futuristic dark aesthetics.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">3D Transforms</span>
+              <span class="tag">Flex & Grid</span>
+              <span class="tag">Transitions</span>
+            </div>
+          </div>
+
+          <!-- Skill 5: JavaScript -->
+          <div class="skill-card" data-tilt data-tilt-max="12">
+            <div class="skill-icon-wrap 3d-icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                <path d="M3 3h18v18H3V3zm14.5 13.5c0-.9-.5-1.4-1.9-2l-.6-.3c-.8-.3-1.1-.6-1.1-1.1 0-.5.4-.9 1.1-.9.7 0 1.1.3 1.4.9l1.6-1c-.6-1.1-1.6-1.7-3-1.7-1.8 0-3 1.1-3 2.7 0 1.2.7 1.9 2.2 2.5l.6.3c.9.4 1.3.7 1.3 1.3 0 .6-.5 1-1.3 1-.9 0-1.5-.5-1.8-1.2l-1.6 1c.6 1.3 1.8 2 3.4 2 2 0 3.3-1.1 3.3-2.8zm-7.6-6.1h2v6.8c0 1.5-.7 2.3-2.1 2.3-.9 0-1.7-.4-2.1-1l1.1-1.3c.3.4.6.6 1 .6.5 0 .8-.3.8-.9V10.4z"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">JavaScript</h3>
+            <p class="skill-desc">
+              Implementing interactive DOM manipulation, event handling, carousel slides, 3D card tilt tracking, and client-side logic.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Vanilla JS</span>
+              <span class="tag">DOM Controls</span>
+              <span class="tag">Interactivity</span>
+            </div>
+          </div>
+
+          <!-- Skill 6: UI/UX Design (Violet Highlighted) -->
+          <div class="skill-card featured-skill-violet" data-tilt data-tilt-max="12">
+            <div class="skill-badge-top violet-badge">DESIGN CRAFT</div>
+            <div class="skill-icon-wrap violet-color 3d-icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.38 0 2.5-1.12 2.5-2.5 0-.61-.23-1.2-.64-1.67-.08-.1-.13-.23-.13-.33 0-.28.22-.5.5-.5H16c3.31 0 6-2.69 6-6 0-4.96-4.49-9-10-9zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 8 6.5 8s1.5.67 1.5 1.5S7.33 11 6.5 11zm3-4C8.67 7 8 6.33 8 5.5S8.67 4 9.5 4s1.5.67 1.5 1.5S10.33 7 9.5 7zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 4 14.5 4s1.5.67 1.5 1.5S15.33 7 14.5 7zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 8 17.5 8s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">UI/UX Design</h3>
+            <p class="skill-desc">
+              Designing user-friendly wireframes, sleek interfaces, cyber-minimalist layouts, and intuitive interactive experiences.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Wireframing</span>
+              <span class="tag">Visual Flow</span>
+              <span class="tag">Simplicity</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION WITH 3D SLIDER ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header projects-header-flex">
+          <div>
+            <span class="section-tag">// 03. EXPLORATIONS & BUILDS</span>
+            <h2 class="section-title">FEATURED PROJECTS</h2>
+            <p class="section-subtitle">
+              An overview of ongoing coding experiments, web developments, and design concepts under active exploration.
+            </p>
+            <div class="section-line"></div>
+          </div>
+
+          <!-- Slider Controls (Prev / Next) -->
+          <div class="slider-controls" aria-label="Project slide navigation">
+            <button class="slider-arrow prev" id="slider-prev-btn" aria-label="Previous Project Slide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <div class="slider-dots" id="slider-dots-container"></div>
+            <button class="slider-arrow next" id="slider-next-btn" aria-label="Next Project Slide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Project Carousel Track -->
+        <div class="projects-carousel-wrapper" id="projects-carousel">
+          <div class="projects-carousel-track" id="carousel-track">
+            
+            <!-- Project Slide 1: Python Development -->
+            <div class="carousel-slide">
+              <article class="project-card 3d-card" data-tilt data-tilt-max="10">
+                <div class="project-visual">
+                  <div class="project-preview python-preview">
+                    <div class="preview-terminal 3d-layer" data-z="30">
+                      <div class="terminal-bar">
+                        <span class="term-dot"></span>
+                        <span class="term-dot"></span>
+                        <span class="term-dot"></span>
+                        <span class="term-title">python_engine.py</span>
+                      </div>
+                      <pre class="terminal-code"><code><span class="syn-kw">def</span> <span class="syn-fn">solve_challenge</span>(data):
+    <span class="syn-comment"># Optimized logic flow</span>
+    result = [x <span class="syn-kw">for</span> x <span class="syn-kw">in</span> data <span class="syn-kw">if</span> x > 0]
+    <span class="syn-kw">return</span> process_pipeline(result)
+
+<span class="syn-fn">print</span>(<span class="syn-str">"Execution: 0.002ms | OK"</span>)</code></pre>
+                    </div>
+                  </div>
+                  <span class="project-category-badge cobalt-badge">PYTHON FOCUS</span>
+                </div>
+
+                <div class="project-content">
+                  <h3 class="project-title">Python Development</h3>
+                  <p class="project-description">
+                    Python programming experiments, coding solutions, and software development projects.
+                  </p>
+
+                  <div class="project-tags">
+                    <span class="p-tag">Python 3</span>
+                    <span class="p-tag">Algorithms</span>
+                    <span class="p-tag">Data Logic</span>
+                    <span class="p-tag">Problem Solving</span>
+                  </div>
+
+                  <div class="project-actions">
+                    <button class="btn btn-sm btn-primary project-modal-trigger" data-project="python">
+                      <span>View Project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </button>
+                    <a href="https://github.com/ssasidhar225-spec" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" title="Explore GitHub">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                      </svg>
+                      <span>Code</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project Slide 2: Web Development -->
+            <div class="carousel-slide">
+              <article class="project-card 3d-card" data-tilt data-tilt-max="10">
+                <div class="project-visual">
+                  <div class="project-preview web-preview">
+                    <div class="preview-browser 3d-layer" data-z="30">
+                      <div class="browser-bar">
+                        <span class="term-dot"></span>
+                        <span class="term-dot"></span>
+                        <span class="term-dot"></span>
+                        <span class="browser-url">https://sasidhar.dev/web</span>
+                      </div>
+                      <div class="browser-body">
+                        <div class="wireframe-hero">
+                          <div class="wf-title"></div>
+                          <div class="wf-subtitle"></div>
+                          <div class="wf-btn"></div>
+                        </div>
+                        <div class="wf-grid">
+                          <div class="wf-card"></div>
+                          <div class="wf-card"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="project-category-badge lime-badge">WEB DEVELOPMENT</span>
+                </div>
+
+                <div class="project-content">
+                  <h3 class="project-title">Web Development</h3>
+                  <p class="project-description">
+                    Modern, responsive websites built using HTML, CSS, and JavaScript.
+                  </p>
+
+                  <div class="project-tags">
+                    <span class="p-tag">HTML5</span>
+                    <span class="p-tag">CSS3 (3D)</span>
+                    <span class="p-tag">Vanilla JS</span>
+                    <span class="p-tag">Responsive UI</span>
+                  </div>
+
+                  <div class="project-actions">
+                    <button class="btn btn-sm btn-primary project-modal-trigger" data-project="web">
+                      <span>View Project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </button>
+                    <a href="https://github.com/ssasidhar225-spec" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" title="Explore GitHub">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                      </svg>
+                      <span>Code</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project Slide 3: UI/UX Design -->
+            <div class="carousel-slide">
+              <article class="project-card 3d-card" data-tilt data-tilt-max="10">
+                <div class="project-visual">
+                  <div class="project-preview design-preview">
+                    <div class="preview-canvas 3d-layer" data-z="30">
+                      <div class="design-circle" aria-hidden="true"></div>
+                      <div class="design-card-mini">
+                        <div class="mini-bar-violet"></div>
+                        <div class="mini-text-line"></div>
+                        <div class="mini-text-line short"></div>
+                      </div>
+                      <div class="design-badge-mini">VIOLET CYBER</div>
+                    </div>
+                  </div>
+                  <span class="project-category-badge violet-badge">DESIGN CONCEPT</span>
+                </div>
+
+                <div class="project-content">
+                  <h3 class="project-title">UI/UX Design</h3>
+                  <p class="project-description">
+                    Creative interface concepts focused on usability, simplicity, and beautiful visual experiences.
+                  </p>
+
+                  <div class="project-tags">
+                    <span class="p-tag">UI/UX</span>
+                    <span class="p-tag">Wireframing</span>
+                    <span class="p-tag">Visual Identity</span>
+                    <span class="p-tag">Design Systems</span>
+                  </div>
+
+                  <div class="project-actions">
+                    <button class="btn btn-sm btn-primary project-modal-trigger" data-project="design">
+                      <span>View Project</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </button>
+                    <a href="#contact" class="btn btn-sm btn-ghost" title="Inquire Design">
+                      <span>Inquire</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 04. ACADEMICS</span>
+          <h2 class="section-title">EDUCATION</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-card-wrapper">
+          <div class="education-card 3d-card" data-tilt data-tilt-max="8">
+            <div class="edu-icon-col">
+              <div class="edu-symbol 3d-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="edu-rail" aria-hidden="true"></div>
+            </div>
+
+            <div class="edu-content-col">
+              <div class="edu-meta">
+                <span class="edu-status-badge">CURRENTLY ENROLLED</span>
+                <span class="edu-institution-badge">NIAT COLLEGE</span>
+                <span class="edu-standing">First Year Student</span>
+              </div>
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+              <p class="edu-discipline">Engineering and Technology &bull; NIAT College</p>
+              
+              <div class="edu-details">
+                <p class="edu-narrative">
+                  Engaged in fundamental engineering and computing studies at NIAT College. Actively pursuing structured understanding of algorithms, procedural programming in C, high-level computational scripting with Python, and modern responsive web architectures.
+                </p>
+                <div class="edu-tags">
+                  <span class="tag">NIAT College</span>
+                  <span class="tag">Engineering Foundations</span>
+                  <span class="tag">Computational Logic</span>
+                  <span class="tag">B.Tech First Year</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 05. MILESTONES</span>
+          <h2 class="section-title">ACHIEVEMENTS</h2>
+          <p class="section-subtitle">
+            Structured roadmap of milestones, programming accomplishments, and ongoing technical pursuits at NIAT College.
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <!-- Category 1: Programming Achievements -->
+          <div class="achievement-card 3d-card" data-tilt data-tilt-max="10">
+            <div class="achieve-header">
+              <div class="achieve-icon 3d-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <span class="achieve-type">PROGRAMMING</span>
+            </div>
+            <h3 class="achieve-title">Programming Achievements</h3>
+            <p class="achieve-desc">
+              Dedicated mastery of algorithmic logic, structured problem solving in C, and Python script automation modules.
+            </p>
+            <div class="achieve-status">
+              <span class="status-indicator"></span>
+              <span class="status-label">Active Coding Practice</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Technical Certifications -->
+          <div class="achievement-card 3d-card" data-tilt data-tilt-max="10">
+            <div class="achieve-header">
+              <div class="achieve-icon violet-icon 3d-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="achieve-type">CERTIFICATIONS</span>
+            </div>
+            <h3 class="achieve-title">Technical Certifications</h3>
+            <p class="achieve-desc">
+              Enrolled in self-directed curriculum across core programming and modern web technologies. (Editable section for forthcoming credentials).
+            </p>
+            <div class="achieve-status">
+              <span class="status-indicator violet-indicator"></span>
+              <span class="status-label">Curriculum In Progress</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Coding Competitions -->
+          <div class="achievement-card 3d-card" data-tilt data-tilt-max="10">
+            <div class="achieve-header">
+              <div class="achieve-icon 3d-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <span class="achieve-type">COMPETITIONS</span>
+            </div>
+            <h3 class="achieve-title">Coding Competitions</h3>
+            <p class="achieve-desc">
+              Preparing for NIAT College hackathons and competitive programming challenges to test speed, efficiency, and real-time design.
+            </p>
+            <div class="achieve-status">
+              <span class="status-indicator"></span>
+              <span class="status-label">Preparation & Participation</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Web Development Milestones -->
+          <div class="achievement-card 3d-card" data-tilt data-tilt-max="10">
+            <div class="achieve-header">
+              <div class="achieve-icon 3d-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <span class="achieve-type">WEB MILESTONES</span>
+            </div>
+            <h3 class="achieve-title">Web Development Milestones</h3>
+            <p class="achieve-desc">
+              Engineered high-performance 3D carousel architecture with pure vanilla web standards, zero bloat, and smooth CSS perspective.
+            </p>
+            <div class="achieve-status">
+              <span class="status-indicator"></span>
+              <span class="status-label">Production Quality Standard</span>
+            </div>
+          </div>
+
+          <!-- Category 5: UI/UX Accomplishments -->
+          <div class="achievement-card 3d-card" data-tilt data-tilt-max="10">
+            <div class="achieve-header">
+              <div class="achieve-icon violet-icon 3d-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                  <line x1="16" y1="8" x2="2" y2="22"></line>
+                  <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                </svg>
+              </div>
+              <span class="achieve-type">UI/UX CRAFT</span>
+            </div>
+            <h3 class="achieve-title">UI/UX Accomplishments</h3>
+            <p class="achieve-desc">
+              Conceptualized a signature palette of midnight black, electric cobalt, acid lime, and cyber violet with interactive 3D spatial motion.
+            </p>
+            <div class="achieve-status">
+              <span class="status-indicator violet-indicator"></span>
+              <span class="status-label">Design System Implemented</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 06. GET IN TOUCH</span>
+          <h2 class="section-title">LET'S CONNECT</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-box 3d-card" data-tilt data-tilt-max="5">
+            
+            <p class="contact-lead">
+              Have an idea, project, or opportunity? Let's connect and create something amazing together.
+            </p>
+
+            <div class="contact-cards-container">
+              
+              <!-- Direct Email Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon-col">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">EMAIL INQUIRIES</span>
+                  <a href="mailto:ssasidhar225@gmail.com" class="channel-link email-link">
+                    ssasidhar225@gmail.com
+                  </a>
+                </div>
+                <button class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-tooltip" id="copy-tooltip">Copy</span>
+                </button>
+              </div>
+
+              <!-- GitHub Profile Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon-col">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">OPEN SOURCE PROFILE</span>
+                  <a href="https://github.com/ssasidhar225-spec" target="_blank" rel="noopener noreferrer" class="channel-link">
+                    github.com/ssasidhar225-spec
+                  </a>
+                </div>
+                <a href="https://github.com/ssasidhar225-spec" target="_blank" rel="noopener noreferrer" class="external-link-btn" aria-label="Visit Sasidhar GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+
+            <!-- Direct Mail Button Action -->
+            <div class="contact-cta-wrapper">
+              <a href="mailto:ssasidhar225@gmail.com?subject=Hello%20Sasidhar%20-%20Project%20Collaboration" class="btn btn-primary btn-lg 3d-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>SEND DIRECT EMAIL</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== PROJECT DETAILS MODAL ==================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-category" id="modal-category">PROJECT CATEGORY</span>
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Content injected dynamically via script.js -->
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/ssasidhar225-spec" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" id="modal-link">
+          <span>Explore on GitHub</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification for Copy Email -->
+  <div class="toast-notification" id="toast" role="status" aria-live="polite">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C6FF3D" stroke-width="2">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span>Email copied to clipboard!</span>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-divider" aria-hidden="true">
+        <div class="divider-accent"></div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          <p>DESIGNED &amp; DEVELOPED BY SASIDHAR &bull; NIAT COLLEGE &copy; 2026</p>
+          <span class="footer-subcopy">Midnight Black &bull; Electric Cobalt &bull; Acid Lime &bull; Cyber Violet</span>
+        </div>
+
+        <div class="footer-back-to-top">
+          <a href="#home" class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page">
+            <span>BACK TO TOP</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Engine -->
+  <script src="script.js"></script>
+</body>
+</html>
